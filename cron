@@ -1,0 +1,3 @@
+# Turning off screen at 11pm and wake up at 7am
+0 23 * * * xset -display :1 dpms force off
+0 7 * * * xset -display :1 dpms force on
