@@ -1,12 +1,24 @@
 # cronsleep
 
+## Steps 
+### Setup 
+* Install and start (crouton)[https://github.com/dnschneid/crouton] (Ubuntu virtual machine for Chrome OS) 
+* Download in the same location these script files: `caffine.sh`and `start.sh`
 
-# Steps 
-* Install Linux 
-* Start Linux (todo add commands) 
-* On Linux start the terminal then type :
-* sudo cron
-* crontab -e (will open a Vim) 
-* 00 17 * * * xset -display :1 dpms force off 
-* 00 17 * * * xset -display :1 dpms force on 
-* save the cron (:wq) 
+### Configure Cron 
+* Launch terminal
+* type to edit cron jobs 
+```
+$ crontab -e
+```
+* press `i` key to insert cron job (see `cronjob` file to turn off your screen in specific time. Note: `-display :1` worked in my case, but test also with `-display :0`)
+* press `ESC` then type `:wq` to save cron 
+
+Now your screen sleep timer is set. 
+
+### Start 
+* To launch the script, run in terminal
+```
+$ chmod +x start.sh
+$ sudo ./start.sh
+``` 
