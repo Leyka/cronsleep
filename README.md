@@ -2,7 +2,7 @@
 
 ## Steps 
 ### Setup 
-* Install and start (crouton)[https://github.com/dnschneid/crouton] (Ubuntu virtual machine for Chrome OS) 
+* Install and start [crouton](https://github.com/dnschneid/crouton) (Ubuntu virtual machine for Chrome OS) 
 * Download in the same location these script files: `caffine.sh`and `start.sh`
 
 ### Configure Cron 
