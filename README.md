@@ -8,7 +8,7 @@
 ### Configure Cron 
 * Launch terminal
 * type to edit cron jobs 
-```
+```bash
 $ crontab -e
 ```
 * press `i` key to insert cron job (see `cronjob` file to turn off your screen in specific time. Note: `-display :1` worked in my case, but test also with `-display :0`)
@@ -18,7 +18,7 @@ Now your screen sleep timer is set.
 
 ### Start 
 * To launch the script, run in terminal
-```
+```bash
 $ chmod +x start.sh
 $ sudo ./start.sh
 ``` 
